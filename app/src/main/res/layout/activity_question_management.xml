@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Activity.QuestionManagement">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Thêm Câu Hỏi"
+            android:textColor="#04332F"
+            android:textSize="24sp"
+            android:layout_marginBottom="24dp"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="24dp"
+            android:visibility="gone"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/edtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Nhập nội dung câu hỏi" />
+
+    <EditText
+        android:id="@+id/edtAnswer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập đáp án đúng"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edtAnswer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập đáp án phụ 1"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edtAnswer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập đáp án phụ 2"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edtAnswer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập đáp án phụ 3"
+        android:textColor="#0D26AF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm Câu Hỏi"
+        android:textColor="@android:color/white"
+        android:background="#0D26AF"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

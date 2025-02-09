@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="#3F51B5"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_vertical"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/user_clone"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trần Minh"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvMsv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã sinh viên: "
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:paddingVertical="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="himakevolution@gmail.com"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        />
+
+</LinearLayout>

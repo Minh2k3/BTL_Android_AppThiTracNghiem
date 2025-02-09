@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AFCED8"
+    tools:context=".Activity.QuestionsActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/tvQuestionID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1/25"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvTimeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="31 : 03 min"
+            android:textColor="#002AFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:backgroundTint="#FFBB33"
+            android:background="@drawable/submit_border"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_middle_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#002AFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_top_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/tvExamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bài thi số 1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/imgSound"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/not_mute"
+            />
+
+        <ImageView
+            android:id="@+id/imgAllQuestions"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/menu_question"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#002AFF"
+        android:padding="12dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/left_arrow"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:background="@color/purple_500"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <Button
+            android:id="@+id/btnClearSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submit_border"
+            android:text="Xóa lựa chọn"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submit_border"
+            android:text="Lưu câu hỏi"
+            android:textColor="@color/white"
+            />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/right_arrow"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:background="@color/purple_500"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listQuestions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_middle_bar"
+        android:layout_margin="16dp"
+        >
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/tvQuestionNumber"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="1"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:backgroundTint="#A8A8A8"
+        android:background="@drawable/circle"
+        />
+
+</LinearLayout>

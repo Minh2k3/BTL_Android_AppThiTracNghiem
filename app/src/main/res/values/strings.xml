@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Trắc nghiệm Android</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_favorite">Favorite</string>
+    <string name="nav_history">History</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_my_profile">My Profile</string>
+    <string name="nav_change_password">Change Password</string>
+    <string name="nav_sign_out">Sign Out</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

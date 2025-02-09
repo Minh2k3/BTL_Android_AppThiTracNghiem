@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_margin="32dp"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:text="Đã kết nối mạng"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+
+        android:text="Bạn có muốn đăng nhập không?"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="16dp"
+        />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/tvContent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+
+        android:text="Hủy"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/tvContent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+
+        android:text="Chuyển ngay"
+        android:textColor="@color/white"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="64dp"
+        android:background="?android:attr/listDivider"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

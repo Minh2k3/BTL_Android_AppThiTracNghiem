@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "221710586212",
+    "project_id": "onthitracnghiem-1812",
+    "storage_bucket": "onthitracnghiem-1812.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221710586212:android:e9420a1bdebcd3c0e66a71",
+        "android_client_info": {
+          "package_name": "com.example.btl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtuNq6gXhklwsF8bbQ1pHsG2Go3SDkbdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

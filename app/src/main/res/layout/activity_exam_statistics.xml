@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/khungtron"
+    tools:context=".Activity.ExamStatistics">
+
+    <ImageButton
+        android:id="@+id/btnReturn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:scaleType="centerCrop"
+        android:background="@drawable/back_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tvExamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên bài thi"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thống kê bài làm"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvExamName"
+        android:layout_marginTop="80dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/students"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thí sinh"
+                    android:textSize="24sp"
+                    android:textColor="@color/my_primary"
+                    android:paddingVertical="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCandidates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/my_primary"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/trophy"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Điểm"
+                    android:textSize="24sp"
+                    android:textColor="@color/my_primary"
+                    android:paddingVertical="10dp"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tvScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10.0"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/my_primary"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

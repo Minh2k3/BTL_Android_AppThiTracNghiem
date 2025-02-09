@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2E90B0"
+    tools:context=".Activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="132dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/logo_tlu"
+        android:gravity="center" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingVertical="5dp"
+                android:text="Đăng kí"
+                android:textColor="#2E90B0"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtMsv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:hint="Nhập mã sinh viên"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHint="#808080" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:hint="Nhập tên sinh viên"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHint="#808080" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:hint="Nhập địa chỉ email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColorHint="#808080" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:hint="Nhập mật khẩu"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColorHint="#808080" />
+
+            <EditText
+                android:id="@+id/edtRePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:hint="Nhập lại mật khẩu"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColorHint="#808080" />
+
+            <CheckBox
+                android:id="@+id/chkPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Kiểm tra kỹ mã sinh viên"
+                android:textColor="#2239B6"
+                android:textStyle="italic"
+                />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/my_primary"
+                android:text="Đăng kí"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:id="@+id/layout_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đã có tài khoản? "
+                    />
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đăng nhập ngay"
+                    android:textStyle="italic"
+                    android:textColor="#2E90B0"
+                    />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
